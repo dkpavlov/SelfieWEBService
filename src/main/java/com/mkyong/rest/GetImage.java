@@ -80,7 +80,7 @@ public class GetImage {
             selfie = selfieRepository.findOne(Long.valueOf(lastImageId));
         }
 
-        file = new File(BASE_PATH_WINDOWS + selfie.getPictureName());
+        file = new File(BASE_LINUX + selfie.getPictureName());
         Response.ResponseBuilder response = Response.ok(file);
         response.type(MediaType.APPLICATION_OCTET_STREAM_TYPE);
         response.header("Content-Disposition", "attachment; filename=" + selfie.getPictureName());
@@ -98,7 +98,7 @@ public class GetImage {
         Long randomId = l.get(randInt(0, l.size() - 1));
 
         Selfie selfie = selfieRepository.findOne(randomId);
-        File file = new File(BASE_PATH_WINDOWS + selfie.getPictureName());
+        File file = new File(BASE_LINUX + selfie.getPictureName());
         Response.ResponseBuilder response = Response.ok(file);
         response.type(MediaType.APPLICATION_OCTET_STREAM_TYPE);
         response.header("Content-Disposition", "attachment; filename=" + selfie.getPictureName());
@@ -114,7 +114,7 @@ public class GetImage {
         PageRequest pageRequest = new PageRequest(0, 1, Sort.Direction.DESC, "id");
         Page<Selfie> selfiePage = selfieRepository.findAll(pageRequest);
         Selfie selfie = selfiePage.getContent().get(0);
-        File file = new File(BASE_PATH_WINDOWS + selfie.getPictureName());
+        File file = new File(BASE_LINUX + selfie.getPictureName());
         Response.ResponseBuilder response = Response.ok(file);
         response.type(MediaType.APPLICATION_OCTET_STREAM_TYPE);
         response.header("Content-Disposition", "attachment; filename=" + selfie.getPictureName());
