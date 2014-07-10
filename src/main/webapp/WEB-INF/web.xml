@@ -43,7 +43,7 @@
 		<servlet-name>jersey-serlvet</servlet-name>
 		<url-pattern>/*</url-pattern>
 	</servlet-mapping>
-    <!--<resource-ref>
+   <!-- <resource-ref>
         <description>My DataSource Reference</description>
         <res-ref-name>jdbc/selfie</res-ref-name>
         <res-type>javax.sql.DataSource</res-type>
