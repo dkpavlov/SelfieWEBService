@@ -24,6 +24,17 @@ public class Selfie extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private Type type;
 
+    @Column
+    private Integer score = 0;
+
+    public Integer getScore() {
+        return score;
+    }
+
+    public void setScore(Integer score) {
+        this.score = score;
+    }
+
     public Type getType() {
         return type;
     }

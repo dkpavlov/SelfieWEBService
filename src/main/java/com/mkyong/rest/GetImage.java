@@ -33,24 +33,19 @@ public class GetImage {
     private static final String BASE_PATH_OSX = "/Users/dkpavlov/Desktop/Android/selfies/";
     private static final String BASE_LINUX = "/usr/share/glassfish3_old/selfies/";
 
+    private static final String CURRENT_BASE = BASE_LINUX;
+
     @Autowired
     CommentRepository commentRepository;
 
     @Autowired
     SelfieRepository selfieRepository;
 
-    public static Long LAST_PICTURE_ID = null;
-
-    @GET
-    @Path("/list/{gender}/{type}")
-    @Produces("application/json")
-    public List<Long> ge(@PathParam("gender") Gender gender,
-                         @PathParam("type") Type type){
-        LastKnownImage image = new LastKnownImage();
-        List<Long> l = selfieRepository.getAllSelfiesIdByGenderAndType(gender, type);
-        image.setList(l);
-        return l;
-    }
+    private static Long LAST_PICTURE_ID = null;
+    private static List<Long> maleSFWIds = null;
+    private static List<Long> maleNSFWIds = null;
+    private static List<Long> womanSFWIds = null;
+    private static List<Long> womanNSFWIds = null;
 
     @GET
     @Path("/order/{gender}/{type}/{direction}/{last}")
@@ -81,12 +76,12 @@ public class GetImage {
             selfie = selfieRepository.findOne(Long.valueOf(lastImageId));
         }
 
-        file = new File(BASE_PATH_WINDOWS + selfie.getPictureName());
+        file = new File(CURRENT_BASE + selfie.getPictureName());
         Response.ResponseBuilder response = Response.ok(file);
         response.type(MediaType.APPLICATION_OCTET_STREAM_TYPE);
         response.header("Content-Disposition", "attachment; filename=" + selfie.getPictureName());
         response.header("Picture-id", selfie.getId().toString());
-
+        response.header("Picture-score", selfie.getScore().toString());
         return response.build();
     }
 
@@ -95,16 +90,19 @@ public class GetImage {
     public Response getRandomImage(@PathParam("gender") Gender gender,
                                    @PathParam("type") Type type,
                                    @PathParam("oldId") String oldId){
-        List<Long> l = selfieRepository.getAllSelfiesIdByGenderAndTypeAndIdNot(gender, type, Long.valueOf(oldId));
-        Long randomId = l.get(randInt(0, l.size() - 1));
-
-        Selfie selfie = selfieRepository.findOne(randomId);
-        File file = new File(BASE_PATH_WINDOWS + selfie.getPictureName());
+        checkAndInitLists();
+        List<Long> list = getListByGenderAndType(gender, type);
+        Long randID = getRandomId(list);
+        while (randID.equals(Long.valueOf(oldId))){
+            randID = getRandomId(list);
+        }
+        Selfie selfie = selfieRepository.findOne(randID);
+        File file = new File(CURRENT_BASE + selfie.getPictureName());
         Response.ResponseBuilder response = Response.ok(file);
         response.type(MediaType.APPLICATION_OCTET_STREAM_TYPE);
         response.header("Content-Disposition", "attachment; filename=" + selfie.getPictureName());
         response.header("Picture-id", selfie.getId().toString());
-
+        response.header("Picture-score", selfie.getScore().toString());
         return response.build();
     }
 
@@ -112,14 +110,15 @@ public class GetImage {
     @Path("/new/order/{gender}/{type}")
     public Response getNewestPicture(@PathParam("gender") Gender gender,
                                      @PathParam("type") Type type){
-        PageRequest pageRequest = new PageRequest(0, 1, Sort.Direction.DESC, "id");
-        Page<Selfie> selfiePage = selfieRepository.findAll(pageRequest);
-        Selfie selfie = selfiePage.getContent().get(0);
-        File file = new File(BASE_PATH_WINDOWS + selfie.getPictureName());
+        checkAndInitLists();
+        List<Long> list = getListByGenderAndType(gender, type);
+        Selfie selfie = selfieRepository.findOne(list.get(list.size() - 1));
+        File file = new File(CURRENT_BASE + selfie.getPictureName());
         Response.ResponseBuilder response = Response.ok(file);
         response.type(MediaType.APPLICATION_OCTET_STREAM_TYPE);
         response.header("Content-Disposition", "attachment; filename=" + selfie.getPictureName());
         response.header("Picture-id", selfie.getId().toString());
+        response.header("Picture-score", selfie.getScore().toString());
         return response.build();
     }
 
@@ -127,10 +126,12 @@ public class GetImage {
     @Path("/img/{id}")
     public Response getImg(@PathParam("id") String id) {
         Selfie selfie = selfieRepository.findOne(Long.valueOf(id));
-        File file = new File(BASE_PATH_WINDOWS + selfie.getPictureName());
+        File file = new File(CURRENT_BASE + selfie.getPictureName());
         Response.ResponseBuilder response = Response.ok(file);
         response.type(MediaType.APPLICATION_OCTET_STREAM_TYPE);
         response.header("Content-Disposition", "attachment; filename=" + selfie.getPictureName());
+        response.header("Picture-id", id);
+        response.header("Picture-score", selfie.getScore().toString());
         return response.build();
     }
 
@@ -149,7 +150,7 @@ public class GetImage {
         byte[] b = Base64.decodeBase64(base46jpg);
         FileOutputStream fos = null;
         try {
-            fos = new FileOutputStream("D:\\selfies\\" + pictureName);
+            fos = new FileOutputStream(CURRENT_BASE + pictureName);
             fos.write(b);
             fos.close();
 
@@ -162,13 +163,30 @@ public class GetImage {
         selfie.setGender(gender);
         selfie.setType(type);
 
-        selfieRepository.save(selfie);
+        Selfie selfie1 = selfieRepository.save(selfie);
 
         Response.ResponseBuilder response = Response.ok();
+        response.header("Picture-id", selfie1.getId().toString());
+        initAllLists();
+        initLastPicturePointer();
         return response.build();
     }
 
-
+   public List<Long> getListByGenderAndType(Gender gender, Type type){
+       if(gender.equals(Gender.FEMALE)){
+           if(type.equals(Type.NSFW)){
+               return womanNSFWIds;
+           } else {
+               return womanSFWIds;
+           }
+       } else {
+           if(type.equals(Type.NSFW)){
+               return maleNSFWIds;
+           } else {
+               return maleSFWIds;
+           }
+       }
+   }
 
     public static int randInt(int min, int max) {
         Random rand = new Random();
@@ -176,13 +194,31 @@ public class GetImage {
         return randomNum;
     }
 
+    public static Long getRandomId(List<Long> idList){
+        return idList.get(randInt(0, idList.size() - 1));
+    }
+
     public void initLastPicturePointer(){
         PageRequest pageRequest = new PageRequest(0, 1, Sort.Direction.DESC, "id");
         Page<Selfie> selfiePage = selfieRepository.findAll(pageRequest);
-        if(!selfiePage.getContent().isEmpty()){
+        if(selfiePage.getContent().isEmpty()){         https://i.imgur.com/aF446I7.jpg
             LAST_PICTURE_ID = 0L;
         } else {
             LAST_PICTURE_ID = selfiePage.getContent().get(0).getId();
+        }
+    }
+
+    public void initAllLists(){
+        PageRequest pageRequest = new PageRequest(0, 1000, Sort.Direction.DESC, "id");
+        maleSFWIds = selfieRepository.getAllSelfiesIdByGenderAndType(Gender.MALE, Type.SFW, pageRequest);
+        maleNSFWIds = selfieRepository.getAllSelfiesIdByGenderAndType(Gender.MALE, Type.NSFW, pageRequest);
+        womanSFWIds = selfieRepository.getAllSelfiesIdByGenderAndType(Gender.FEMALE, Type.SFW, pageRequest);
+        womanNSFWIds = selfieRepository.getAllSelfiesIdByGenderAndType(Gender.FEMALE, Type.NSFW, pageRequest);
+    }
+
+    public void checkAndInitLists(){
+        if(maleNSFWIds == null || maleNSFWIds == null || womanNSFWIds == null || womanSFWIds == null){
+            initAllLists();
         }
     }
 

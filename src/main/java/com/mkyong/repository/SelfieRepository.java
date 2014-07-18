@@ -25,7 +25,7 @@ public interface SelfieRepository extends PagingAndSortingRepository<Selfie, Lon
     public Page<Selfie> findByGender(Gender gender, Pageable pageable);
 
     @Query(value = "select s.id from Selfie s where s.gender = ?1 and s.type = ?2 order by s.id DESC")
-    public List<Long> getAllSelfiesIdByGenderAndType(Gender gender, Type type);
+    public List<Long> getAllSelfiesIdByGenderAndType(Gender gender, Type type, Pageable pageable);
 
     @Query(value = "select s.id from Selfie s where s.gender = ?1 and s.type = ?2 and s.id <> ?3 order by s.id DESC")
     public List<Long> getAllSelfiesIdByGenderAndTypeAndIdNot(Gender gender, Type type, Long id);
