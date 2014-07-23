@@ -14,4 +14,5 @@ import org.springframework.data.repository.PagingAndSortingRepository;
  */
 public interface CommentRepository extends PagingAndSortingRepository<Comment, Long> {
     public Page<Comment> findBySelfieId(Long id, Pageable pageable);
+    public Integer getCommentCount(Long selfieId);
 }

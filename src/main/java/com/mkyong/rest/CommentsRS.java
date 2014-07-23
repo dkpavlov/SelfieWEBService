@@ -54,10 +54,12 @@ public class CommentsRS {
                                     @FormParam("user") String user){
 
         Selfie selfie = selfieRepository.findOne(Long.valueOf(id));
+        selfie.setCommentCount(selfie.getCommentCount() + 1);
         Comment comment = new Comment();
         comment.setText(commentText);
         comment.setUser(user);
         comment.setSelfie(selfie);
+        selfieRepository.save(selfie);
         commentRepository.save(comment);
         PageRequest pageRequest = new PageRequest(0, 1000, Sort.Direction.DESC, "id");
         Page<Comment> commentsPage = commentRepository.findBySelfieId(Long.valueOf(id), pageRequest);

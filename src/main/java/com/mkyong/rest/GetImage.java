@@ -82,6 +82,8 @@ public class GetImage {
         response.header("Content-Disposition", "attachment; filename=" + selfie.getPictureName());
         response.header("Picture-id", selfie.getId().toString());
         response.header("Picture-score", selfie.getScore().toString());
+        response.header("Picture-comments", selfie.getCommentCount());
+        response.header("Picture-favorite", selfie.getFavoritCount());
         return response.build();
     }
 
@@ -103,6 +105,8 @@ public class GetImage {
         response.header("Content-Disposition", "attachment; filename=" + selfie.getPictureName());
         response.header("Picture-id", selfie.getId().toString());
         response.header("Picture-score", selfie.getScore().toString());
+        response.header("Picture-comments", selfie.getCommentCount());
+        response.header("Picture-favorite", selfie.getFavoritCount());
         return response.build();
     }
 
@@ -119,6 +123,8 @@ public class GetImage {
         response.header("Content-Disposition", "attachment; filename=" + selfie.getPictureName());
         response.header("Picture-id", selfie.getId().toString());
         response.header("Picture-score", selfie.getScore().toString());
+        response.header("Picture-comments", selfie.getCommentCount());
+        response.header("Picture-favorite", selfie.getFavoritCount());
         return response.build();
     }
 
@@ -132,6 +138,22 @@ public class GetImage {
         response.header("Content-Disposition", "attachment; filename=" + selfie.getPictureName());
         response.header("Picture-id", id);
         response.header("Picture-score", selfie.getScore().toString());
+        response.header("Picture-comments", selfie.getCommentCount());
+        response.header("Picture-favorite", selfie.getFavoritCount());
+        return response.build();
+    }
+
+    @GET
+    @Path("/img/favorite/{id}")
+    public Response getImgForFavorite(@PathParam("id") String id) {
+        Selfie selfie = selfieRepository.findOne(Long.valueOf(id));
+        selfie.setFavoritCount(selfie.getFavoritCount() + 1);
+        selfieRepository.save(selfie);
+        File file = new File(CURRENT_BASE + selfie.getPictureName());
+        Response.ResponseBuilder response = Response.ok(file);
+        response.type(MediaType.APPLICATION_OCTET_STREAM_TYPE);
+        response.header("Content-Disposition", "attachment; filename=" + selfie.getPictureName());
+        response.header("Picture-id", id);
         return response.build();
     }
 

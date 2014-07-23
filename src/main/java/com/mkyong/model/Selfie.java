@@ -27,6 +27,28 @@ public class Selfie extends BaseEntity {
     @Column
     private Integer score = 0;
 
+    @Column
+    private Integer commentCount = 0;
+
+    @Column
+    private Integer favoritCount = 0;
+
+    public Integer getCommentCount() {
+        return commentCount;
+    }
+
+    public void setCommentCount(Integer commentCount) {
+        this.commentCount = commentCount;
+    }
+
+    public Integer getFavoritCount() {
+        return favoritCount;
+    }
+
+    public void setFavoritCount(Integer favoritCount) {
+        this.favoritCount = favoritCount;
+    }
+
     public Integer getScore() {
         return score;
     }
