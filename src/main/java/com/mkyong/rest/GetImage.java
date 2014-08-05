@@ -59,14 +59,14 @@ public class GetImage {
         File file = null;
         switch (direction){
             case UP:
-                pageRequest = new PageRequest(0, 1, Sort.Direction.ASC, "id");
-                selfiePage = selfieRepository
-                        .findByGenderAndTypeAndIdGreaterThan(gender, type, Long.valueOf(lastImageId), pageRequest);
-                break;
-            case DOWN:
                 pageRequest = new PageRequest(0, 1, Sort.Direction.DESC, "id");
                 selfiePage = selfieRepository
                         .findByGenderAndTypeAndIdLessThan(gender, type, Long.valueOf(lastImageId), pageRequest);
+                break;
+            case DOWN:
+                pageRequest = new PageRequest(0, 1, Sort.Direction.ASC, "id");
+                selfiePage = selfieRepository
+                        .findByGenderAndTypeAndIdGreaterThan(gender, type, Long.valueOf(lastImageId), pageRequest);
                 break;
         }
 
@@ -115,8 +115,8 @@ public class GetImage {
     public Response getNewestPicture(@PathParam("gender") Gender gender,
                                      @PathParam("type") Type type){
         checkAndInitLists();
-        List<Long> list = getListByGenderAndType(gender, type);
-        Selfie selfie = selfieRepository.findOne(list.get(list.size() - 1));
+        PageRequest request = new PageRequest(0, 1, Sort.Direction.DESC, "id");
+        Selfie selfie = selfieRepository.findAll(request).getContent().get(0);
         File file = new File(CURRENT_BASE + selfie.getPictureName());
         Response.ResponseBuilder response = Response.ok(file);
         response.type(MediaType.APPLICATION_OCTET_STREAM_TYPE);
@@ -158,11 +158,22 @@ public class GetImage {
     }
 
     @POST
+    @Path("/favorite")
+    public Response favoriteSelfie(@FormParam("id") String id){
+        Selfie selfie = selfieRepository.findOne(Long.valueOf(id));
+        selfie.setFavoritCount(selfie.getFavoritCount() + 1);
+        selfieRepository.save(selfie);
+        Response.ResponseBuilder response = Response.ok();
+        return response.build();
+    }
+
+    @POST
     @Path("/post")
     @Produces(MediaType.APPLICATION_JSON)
     public Response addComment(@FormParam("gender") Gender gender,
                                @FormParam("type") Type type,
-                               @FormParam("base46jpg") String base46jpg){
+                               @FormParam("base46jpg") String base46jpg,
+                               @FormParam("hashedEmail") String hashedEmail){
         if(LAST_PICTURE_ID == null){
             initLastPicturePointer();
         }
@@ -184,13 +195,36 @@ public class GetImage {
         selfie.setPictureName(pictureName);
         selfie.setGender(gender);
         selfie.setType(type);
-
+        selfie.setHashedEmail(hashedEmail);
         Selfie selfie1 = selfieRepository.save(selfie);
 
         Response.ResponseBuilder response = Response.ok();
         response.header("Picture-id", selfie1.getId().toString());
         initAllLists();
         initLastPicturePointer();
+        return response.build();
+    }
+
+    @GET
+    @Path("/allSelfieIds/{hashedEmail}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Long> getAllSelfiesIds(@PathParam("hashedEmail") String hashedEmail){
+        return selfieRepository.getAllSelfiesIdByHashedMail(hashedEmail);
+    }
+
+    @GET
+    @Path("/delete/{id}")
+    public Response deleteSelfie(@PathParam("id") String id){
+        Selfie selfie = selfieRepository.findOne(Long.valueOf(id));
+        selfieRepository.delete(selfie);
+        Response.ResponseBuilder response = Response.ok();
+        return response.build();
+    }
+
+    @GET
+    @Path("/test")
+    public Response testConnection(){
+        Response.ResponseBuilder response = Response.ok();
         return response.build();
     }
 

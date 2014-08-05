@@ -12,17 +12,49 @@
     <file path="/Dummy.txt" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406111654615" ignored="false" />
     <file path="D:/WorkSpace/PfizerAllInOne/Pfizer_WEB/src/main/java/lirex/controllers/SessionLogController.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1405945968241" ignored="false" />
     <file path="/SessionLogController.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1405945967554" ignored="false" />
-    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/controllers/TriggerController.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406104043605" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/controllers/TriggerController.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406273608416" ignored="false" />
     <file path="/TriggerController.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406104041526" ignored="false" />
     <file path="/Comment.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406104441292" ignored="false" />
     <file path="/CommentRepository.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406104472985" ignored="false" />
-    <file path="/GetImage.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406104891917" ignored="false" />
-    <file path="/Selfie.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406104670597" ignored="false" />
+    <file path="/GetImage.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1407226973034" ignored="false" />
+    <file path="/Selfie.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1407226410461" ignored="false" />
     <file path="/CommentsRS.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406104760783" ignored="false" />
     <file path="/Report2ServiceImpl.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406105904012" ignored="false" />
     <file path="D:/WorkSpace/PfizerAllInOne/Pfizer_WEB/src/main/java/lirex/service/Report2ServiceImpl.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406105904012" ignored="false" />
     <file path="D:/WorkSpace/PfizerAllInOne/Pfizer_WEB/src/main/java/lirex/service/Report7ServiceImpl.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406111606594" ignored="false" />
     <file path="D:/WorkSpace/PfizerAllInOne/Pfizer_WEB/src/main/webapp/WEB-INF/web.xml" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406116113746" ignored="false" />
+    <file path="D:/WorkSpace/bojenci/src/main/webapp/WEB-INF/jboss-web.xml" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406209269982" ignored="false" />
+    <file path="/jboss-web.xml" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406209269982" ignored="false" />
+    <file path="D:/WorkSpace/bojenci/src/main/webapp/WEB-INF/web.xml" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406209548560" ignored="false" />
+    <file path="/web.xml" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406209548560" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/service/NotificationService.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406275435465" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/service/NotificationServiceImpl.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406284091844" ignored="false" />
+    <file path="/NotificationServiceImpl.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406284067577" ignored="false" />
+    <file path="/NotificationService.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406275430005" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/webapp/WEB-INF/pages/object/person/new.jsp" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406273608416" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/controllers/PersonController.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406273608416" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/controllers/VehicleController.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406273608416" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/controllers/NomenclaturesController.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406273608416" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/controllers/DataController.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406275357038" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/controllers/HomeController.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406287520091" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/controllers/ArtifactController.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406273608416" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/controllers/UserController.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406273608416" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/webapp/WEB-INF/security-context.xml" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406273608416" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/webapp/WEB-INF/pages/floor.jsp" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406275357038" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/webapp/WEB-INF/pages/object/person/list.jsp" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406275357038" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/controllers/FloorController.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406275357038" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/controllers/ConnectedClients.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406275357038" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/service/TagsServiceImpl.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406275357038" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/service/ClientServiceImpl.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406275357038" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/service/MapsServiceImpl.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406275357038" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/model/notification/json/Notifications.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406284981641" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/controllers/NotificationController.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406285371508" ignored="false" />
+    <file path="/NotificationController.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406285366567" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/webapp/WEB-INF/pages/notification/list.jsp" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406288639108" ignored="false" />
+    <file path="/list.jsp" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406288636874" ignored="false" />
+    <file path="D:/WorkSpace/AeroScoutSpy/AeroScoutSpy/src/main/java/com/lirex/model/notification/json/SubscribedEvent.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406288393351" ignored="false" />
+    <file path="/SubscribedEvent.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1406287847341" ignored="false" />
+    <file path="/SelfieRepository.java" changelist="379985bc-4b0f-431d-8ddf-89e73974bc25" time="1407226938552" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +69,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -74,6 +105,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -87,9 +119,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/model/Comment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="45" selection-start="340" selection-end="355" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,10 +133,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetImage.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GetImage.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/rest/GetImage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="70" selection-start="3382" selection-end="3382" vertical-scroll-proportion="0.0">
+            <state line="210" column="59" selection-start="8787" selection-end="8787" vertical-scroll-proportion="0.248">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SelfieRepository.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/repository/SelfieRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="101" selection-start="1670" selection-end="1670" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,26 +163,26 @@
       <file leaf-file-name="Test.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/rest/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="28" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
+            <state line="31" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="54" selection-start="1999" selection-end="1999" vertical-scroll-proportion="1.4173486">
-              <folding />
-            </state>
-          </provider>
           <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
             <state />
           </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
             <state />
           </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="28" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
             <state />
           </provider>
         </entry>
@@ -151,7 +190,7 @@
       <file leaf-file-name="CommentsRS.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/rest/CommentsRS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="30" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
+            <state line="48" column="9" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -160,7 +199,7 @@
       <file leaf-file-name="Selfie.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/model/Selfie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="38" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0">
+            <state line="27" column="30" selection-start="564" selection-end="575" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -178,8 +217,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/mkyong/model/Comment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mkyong/repository/CommentRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mkyong/model/Selfie.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mkyong/rest/CommentsRS.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mkyong/model/Selfie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mkyong/repository/SelfieRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mkyong/rest/GetImage.java" />
       </list>
     </option>
@@ -261,10 +302,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="x" value="2" />
+    <option name="y" value="2" />
+    <option name="width" value="1921" />
+    <option name="height" value="1158" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -454,17 +495,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="MavenSettings" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="MavenSettings" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -596,7 +638,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
+    <frame x="2" y="2" width="1921" height="1158" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -614,11 +656,11 @@
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977587" sideWeight="0.67026496" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21839699" sideWeight="0.67132866" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.67026496" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32973504" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19795589" sideWeight="0.67132866" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32867134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -687,18 +729,53 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/model/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="45" selection-start="340" selection-end="355" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/repository/CommentRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="50" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/rest/VoteUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="13" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/rest/GetImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="70" selection-start="3382" selection-end="3382" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/rest/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="28" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="67" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/rest/CommentsRS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="30" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -710,9 +787,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/rest/GetImage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/model/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="70" selection-start="3382" selection-end="3382" vertical-scroll-proportion="0.0">
+        <state line="16" column="45" selection-start="340" selection-end="355" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/repository/CommentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="50" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -726,32 +810,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/rest/CommentsRS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="30" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
+        <state line="48" column="9" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/rest/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="28" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
+        <state line="31" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="54" selection-start="1999" selection-end="1999" vertical-scroll-proportion="1.4173486">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
         <state />
       </provider>
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="28" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/repository/SelfieRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="101" selection-start="1670" selection-end="1670" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/model/Selfie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="30" selection-start="564" selection-end="575" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mkyong/rest/GetImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="210" column="59" selection-start="8787" selection-end="8787" vertical-scroll-proportion="0.248">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

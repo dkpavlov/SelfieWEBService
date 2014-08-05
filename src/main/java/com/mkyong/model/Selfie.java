@@ -25,6 +25,9 @@ public class Selfie extends BaseEntity {
     private Type type;
 
     @Column
+    private String hashedEmail;
+
+    @Column
     private Integer score = 0;
 
     @Column
@@ -35,6 +38,14 @@ public class Selfie extends BaseEntity {
 
     public Integer getCommentCount() {
         return commentCount;
+    }
+
+    public String getHashedEmail() {
+        return hashedEmail;
+    }
+
+    public void setHashedEmail(String hashedEmail) {
+        this.hashedEmail = hashedEmail;
     }
 
     public void setCommentCount(Integer commentCount) {

@@ -30,6 +30,9 @@ public interface SelfieRepository extends PagingAndSortingRepository<Selfie, Lon
     @Query(value = "select s.id from Selfie s where s.gender = ?1 and s.type = ?2 and s.id <> ?3 order by s.id DESC")
     public List<Long> getAllSelfiesIdByGenderAndTypeAndIdNot(Gender gender, Type type, Long id);
 
+    @Query(value = "select s.id from Selfie s where s.hashedEmail = ?1")
+    public List<Long> getAllSelfiesIdByHashedMail(String hashedEmail);
+
 
 
 
