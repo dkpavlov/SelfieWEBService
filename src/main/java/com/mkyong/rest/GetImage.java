@@ -31,7 +31,7 @@ public class GetImage {
 
     private static final String BASE_PATH_WINDOWS = "D:\\selfies\\";
     private static final String BASE_PATH_OSX = "/Users/dkpavlov/Desktop/Android/selfies/";
-    private static final String BASE_LINUX = "/usr/share/glassfish3_old/selfies/";
+    private static final String BASE_LINUX = "/root/selfie-base/";
 
     private static final String CURRENT_BASE = BASE_LINUX;
 
